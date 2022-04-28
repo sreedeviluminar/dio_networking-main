@@ -12,6 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   final DioClient _client = DioClient();
 
   @override
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Center(
                 child: FutureBuilder<User?>(
-                  future: _client.getUser(id: '1'),
+                  future: _client.getUser(id: '6'),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       User? userInfo = snapshot.data;

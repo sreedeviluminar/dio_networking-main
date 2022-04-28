@@ -10,7 +10,9 @@ class FetchUser extends StatefulWidget {
 }
 
 class _FetchUserState extends State<FetchUser> {
+
   final TextEditingController _idController = TextEditingController();
+
   final DioClient _client = DioClient();
 
   bool _isFetching = false;
